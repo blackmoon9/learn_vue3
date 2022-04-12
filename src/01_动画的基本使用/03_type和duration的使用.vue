@@ -3,9 +3,8 @@
     <div>
       <button @click="isShow = !isShow">显示/隐藏</button>
     </div>
-    <transition name="msg" mode="out-in" appear>
+    <transition name="msg" type="animation" :duration="100">
       <h2 class="title" v-if="isShow">Hello jack！！！！</h2>
-      <h2 class="title" v-else>你好！夹克</h2>
     </transition>
   </div>
 </template>

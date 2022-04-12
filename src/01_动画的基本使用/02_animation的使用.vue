@@ -3,9 +3,8 @@
     <div>
       <button @click="isShow = !isShow">显示/隐藏</button>
     </div>
-    <transition name="msg" mode="out-in" appear>
+    <transition name="msg">
       <h2 class="title" v-if="isShow">Hello jack！！！！</h2>
-      <h2 class="title" v-else>你好！夹克</h2>
     </transition>
   </div>
 </template>
@@ -30,18 +29,6 @@ export default {
   }
   .title{
     display: inline-block;
-  }
-  .msg-enter-from,
-  .msg-leave-to{
-    opacity: 0;
-  }
-  .msg-enter-to,
-  .msg-leave-from{
-    opacity: 1;
-  }
-  .msg-enter-active,
-  .msg-leave-active{
-    transition: opacity 1s ease;
   }
   .msg-enter-active{
     animation: bounce 1s ease;
