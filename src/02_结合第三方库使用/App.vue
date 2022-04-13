@@ -54,7 +54,8 @@ export default {
   overflow: hidden;
 }
 .title{
-  display: inline-block;
+  display: inline-block;'
+  color:red
 }
 
 </style>
